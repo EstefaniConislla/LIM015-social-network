@@ -62,9 +62,11 @@ export const profile = () => {
         .then(() => {
           textContent.value = '';
         }).catch((error) => {
+          // eslint-disable-next-line no-console
           console.log('no se agregó post', error);
         });
     } else {
+      // eslint-disable-next-line no-alert
       alert('Ingrese su post');
     }
   };

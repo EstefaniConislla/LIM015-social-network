@@ -60,6 +60,7 @@ export const registerTemplate = () => {
       registerWithEmail(emailRegister, passwordRegister)
         .then(() => {
           emailVerication();
+          // eslint-disable-next-line no-alert
           window.alert('mensaje de verificacion enviado');
           localStorage.setItem('nameRegister', nameUser);
           window.location.hash = '#/LogIn';

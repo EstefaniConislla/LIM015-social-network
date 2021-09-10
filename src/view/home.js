@@ -68,6 +68,7 @@ export const home = () => {
           console.log('no se agregó post', error);
         });
     } else {
+      // eslint-disable-next-line no-alert
       alert('Ingrese su post');
     }
   };
